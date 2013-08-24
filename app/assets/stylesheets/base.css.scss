@@ -5878,7 +5878,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 }
 
 .icons-sprite, .fc-header-left .fc-button-prev .fc-button-inner, .fc-header-left .fc-button-next .fc-button-inner, div.checker span, div.checker span.checked, div.radio span, div.radio span.checked, .ui-datepicker .ui-datepicker-prev .ui-icon, .ui-datepicker .ui-datepicker-next .ui-icon, .dropdown_arrow.accordion-toggle:after, .button a.accordion-toggle:after, #main .top_right ul.nav > li a.accordion-toggle:after, button a.accordion-toggle:after, #sidebar_menu li a.accordion-toggle:after, .dropdown_arrow.dropdown-toggle:after, .button a.dropdown-toggle:after, #main .top_right ul.nav > li a.dropdown-toggle:after, button a.dropdown-toggle:after, #sidebar_menu li a.dropdown-toggle:after, ul.messages_layout li .message_wrap .arrow, .search form .input-append button.btn_search, .menu_states #menu_state_1, .menu_states #menu_state_2, .menu_states #menu_state_3, #header .breadcrumbs ul li .arrow {
-  background: url('../images/icons-s195a86524b.png') no-repeat;
+  background: asset-url('icons-s195a86524b.png') no-repeat;
 }
 
 /*  Font Awesome
@@ -5904,14 +5904,6 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
     Work: Lead Product Designer @ http://kyruus.com
 
     */
-@font-face {
-  font-family: "FontAwesome";
-  src: url('fonts/../../sass/font/fontawesome-webfont.eot');
-  src: url('fonts/../../sass/font/fontawesome-webfont.eot?#iefix') format('eot'), url('fonts/../../sass/font/fontawesome-webfont.woff') format('woff'), url('fonts/../../sass/font/fontawesome-webfont.ttf') format('truetype'), url('fonts/../../sass/font/fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
 /*  Font Awesome styles
     ------------------------------------------------------- */
 [class^="icon-"]:before,
@@ -6824,7 +6816,7 @@ ul.icons li .icon-large:before {
  *
  */
 .icons-sprite, .fc-header-left .fc-button-prev .fc-button-inner, .fc-header-left .fc-button-next .fc-button-inner, div.checker span, div.checker span.checked, div.radio span, div.radio span.checked, .ui-datepicker .ui-datepicker-prev .ui-icon, .ui-datepicker .ui-datepicker-next .ui-icon, .dropdown_arrow.accordion-toggle:after, .button a.accordion-toggle:after, #main .top_right ul.nav > li a.accordion-toggle:after, button a.accordion-toggle:after, #sidebar_menu li a.accordion-toggle:after, .dropdown_arrow.dropdown-toggle:after, .button a.dropdown-toggle:after, #main .top_right ul.nav > li a.dropdown-toggle:after, button a.dropdown-toggle:after, #sidebar_menu li a.dropdown-toggle:after, ul.messages_layout li .message_wrap .arrow, .search form .input-append button.btn_search, .menu_states #menu_state_1, .menu_states #menu_state_2, .menu_states #menu_state_3, #header .breadcrumbs ul li .arrow {
-  background: url('../images/icons-s195a86524b.png') no-repeat;
+  background: asset-url('icons-s195a86524b.png') no-repeat;
 }
 
 .fc {
@@ -6852,7 +6844,7 @@ html .fc,
 .external-event {
   margin: 10px 0;
   padding: 3px 9px;
-  background: url("../img/shadows/b15.png");
+  background: asset-url("shadows/b15.png");
   color: white;
   font-size: 15px;
   line-height: 1.8;
@@ -6911,7 +6903,7 @@ html .fc,
 }
 .fc-header-left .fc-button-today, .fc-header-left .fc-button-today .fc-button-inner {
   font-size: 15px;
-  background: url("../img/shadows/b15.png");
+  background: asset-url("shadows/b15.png");
   margin-top: 0px;
 }
 .fc-header-left .fc-button-today .fc-button-content {
@@ -6987,7 +6979,7 @@ html .fc,
 ------------------------------------------------------------------------*/
 .fc-content {
   clear: both;
-  background: url("../img/shadows/b150png");
+  background: asset-url("shadows/b150png");
 }
 
 .fc-view {
@@ -6996,7 +6988,7 @@ html .fc,
   overflow: hidden;
 }
 .fc-view thead {
-  background: url("../img/shadows/b15.png");
+  background: asset-url("shadows/b15.png");
   line-height: 35px;
 }
 
@@ -7011,7 +7003,7 @@ html .fc,
 .fc-state-highlight {
   /* <td> today cell */
   /* TODO: add .fc-today to <th> */
-  background: url("../img/shadows/b15.png");
+  background: asset-url("shadows/b15.png");
 }
 
 .fc-cell-overlay {
@@ -7104,12 +7096,12 @@ html .fc,
 
 .fc-state-hover,
 .fc-state-hover .fc-button-inner {
-  background: url(../img/shadows/b15.png);
+  background: asset-url("shadows/b15.png");
 }
 
 .fc-state-active,
 .fc-state-active .fc-button-inner {
-  background: url(../img/shadows/b15.png);
+  background: asset-url("shadows/b15.png");
   color: #fff;
 }
 
@@ -7152,7 +7144,7 @@ a.fc-event {
 .fc-event-skin {
   border-color: rgba(0, 0, 0, 0.4);
   /* default BORDER color */
-  background: url(../img/shadows/b15.png);
+  background: asset-url("shadows/b15.png");
   /* default BACKGROUND color */
   color: #fff;
   /* default TEXT color */
@@ -7601,27 +7593,27 @@ table.fc-border-separate {
 }
 
 .paginate_disabled_previous {
-  background: url("../img/datatables/back_disabled.png") no-repeat top left;
+  background: asset-url("datatables/back_disabled.png") no-repeat top left;
 }
 
 .paginate_enabled_previous {
-  background: url("../img/datatables/back_enabled.png") no-repeat top left;
+  background: asset-url("datatables/back_enabled.png") no-repeat top left;
 }
 
 .paginate_enabled_previous:hover {
-  background: url("../img/datatables/back_enabled_hover.png") no-repeat top left;
+  background: asset-url("datatables/back_enabled_hover.png") no-repeat top left;
 }
 
 .paginate_disabled_next {
-  background: url("../img/datatables/forward_disabled.png") no-repeat top right;
+  background: asset-url("datatables/forward_disabled.png") no-repeat top right;
 }
 
 .paginate_enabled_next {
-  background: url("../img/datatables/forward_enabled.png") no-repeat top right;
+  background: asset-url("datatables/forward_enabled.png") no-repeat top right;
 }
 
 .paginate_enabled_next:hover {
-  background: url("../img/datatables/forward_enabled_hover.png") no-repeat top right;
+  background: asset-url("datatables/forward_enabled_hover.png") no-repeat top right;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -7675,17 +7667,17 @@ table.display td.center {
  * DataTables sorting
  */
 .sorting_asc {
-  background: url("../img/datatables/sort_asc.png") no-repeat center right;
+  background: asset-url("datatables/sort_asc.png") no-repeat center right;
   background-color: transparent !important;
 }
 
 .sorting_desc {
-  background: url("../img/datatables/sort_desc.png") no-repeat center right;
+  background: asset-url("datatables/sort_desc.png") no-repeat center right;
   background-color: transparent !important;
 }
 
 .sorting {
-  background: url("../img/datatables/sort_both.png") no-repeat center right;
+  background: asset-url("datatables/sort_both.png") no-repeat center right;
   background-color: transparent !important;
 }
 
@@ -7694,12 +7686,12 @@ table.display td.center {
 }
 
 .sorting_asc_disabled {
-  background: url("../img/datatables/sort_asc_disabled.png") no-repeat center right;
+  background: asset-url("datatables/sort_asc_disabled.png") no-repeat center right;
   background-color: transparent !important;
 }
 
 .sorting_desc_disabled {
-  background: url("../img/datatables/sort_desc_disabled.png") no-repeat center right;
+  background: asset-url("datatables/sort_desc_disabled.png") no-repeat center right;
   background-color: transparent !important;
 }
 
@@ -7816,7 +7808,7 @@ table.display tr.odd.row_selected td {
  */
 /* For the standard odd/even */
 tr.odd td.sorting_1 {
-  background-image: url("../img/shadows/b15.png") !important;
+  background-image: asset-url("shadows/b15.png") !important;
   background-color: transparent !important;
 }
 
@@ -7829,7 +7821,7 @@ tr.odd td.sorting_3 {
 }
 
 .dataTable tr.even td.sorting_1 {
-  background-image: url("../img/shadows/b30.png") !important;
+  background-image: asset-url("shadows/b30.png") !important;
 }
 
 tr.even td.sorting_2 {
@@ -8274,7 +8266,7 @@ html select:focus {
   position: absolute;
   top: 2px;
   left: 2px;
-  background: url(../img/toggle.png) 0 0 no-repeat;
+  background: asset-url("toggle.png") 0 0 no-repeat;
   -webkit-transition: all 200ms ease-out;
   -moz-transition: all 200ms ease-out;
   -o-transition: all 200ms ease-out;
@@ -8912,7 +8904,7 @@ table form {
 .table tbody tr:hover td,
 .table tbody tr:hover th {
   cursor: pointer;
-  background-image: url("../img/shadows/b10.png");
+  background-image: asset-url("shadows/b10.png");
   background-color: transparent !important;
 }
 .table tbody tr.success td {
@@ -8990,17 +8982,17 @@ table form {
 }
 .table-striped tbody tr:nth-child(odd) td,
 .table-striped tbody tr:nth-child(odd) th {
-  background-image: url("../img/shadows/b10.png");
+  background-image: asset-url("shadows/b10.png");
   background-color: transparent !important;
 }
 .table-striped tbody tr:nth-child(even):hover td, .table-striped tbody tr:hover td,
 .table-striped tbody tr:nth-child(even):hover th, .table-striped tbody tr:hover th {
-  background-image: url("../img/shadows/b15.png");
+  background-image: asset-url("shadows/b15.png");
   background-color: transparent !important;
 }
 .table-striped tbody tr:nth-child(odd):hover td,
 .table-striped tbody tr:nth-child(odd):hover th {
-  background-image: url("../img/shadows/b15.png");
+  background-image: asset-url("shadows/b15.png");
   background-color: transparent !important;
 }
 
@@ -9261,7 +9253,7 @@ table td, table th {
 }
 
 html.sidebar_icons #sidebar {
-  background: url(../img/shadows/b85.png) repeat-y;
+  background: asset-url("shadows/b85.png") repeat-y;
   width: 72px;
   overflow: hidden;
   -webkit-transition: .2s all ease-in-out;
@@ -9342,7 +9334,7 @@ html.sidebar_hover #sidebar {
   top: 0;
   left: -310px;
   z-index: 999;
-  background: url(../img/shadows/b85.png) 0 0 repeat-y;
+  background: asset-url("shadows/b85.png") 0 0 repeat-y;
 }
 html.sidebar_hover #main {
   padding-left: 15px;
@@ -9399,32 +9391,32 @@ html.sidebar_hover #main {
 }
 
 .b85, .background_changer ul, #responsive_part ul.responsive li .btn {
-  background-image: url("../img/shadows/b85.png");
+  background-image: asset-url("shadows/b85.png");
 }
 
 .b50, .btn.btn-primary:hover {
-  background-image: url("../img/shadows/b50.png");
+  background-image: asset-url("shadows/b50.png");
 }
 
 .b30, .pagination > ul a.paginate_active, .pagination > .dataTables_paginate a.paginate_active, .pagination > ul .active a, .pagination > ul .active a:hover, .pagination > .dataTables_paginate .active a, .pagination > .dataTables_paginate .active a:hover, .pagination > ul a:hover, .pagination > .dataTables_paginate a:hover, .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .tab-content, .table thead, #sidebar_menu .color_0.active img, #sidebar_menu .color_0 a:hover img, #sidebar_menu .color_0.opened img, #sidebar_menu .color_0 ul, #sidebar_menu .color_1.active img, #sidebar_menu .color_1 a:hover img, #sidebar_menu .color_1.opened img, #sidebar_menu .color_1 ul, #sidebar_menu .color_2.active img, #sidebar_menu .color_2 a:hover img, #sidebar_menu .color_2.opened img, #sidebar_menu .color_2 ul, #sidebar_menu .color_3.active img, #sidebar_menu .color_3 a:hover img, #sidebar_menu .color_3.opened img, #sidebar_menu .color_3 ul, #sidebar_menu .color_4.active img, #sidebar_menu .color_4 a:hover img, #sidebar_menu .color_4.opened img, #sidebar_menu .color_4 ul, #sidebar_menu .color_5.active img, #sidebar_menu .color_5 a:hover img, #sidebar_menu .color_5.opened img, #sidebar_menu .color_5 ul, #sidebar_menu .color_6.active img, #sidebar_menu .color_6 a:hover img, #sidebar_menu .color_6.opened img, #sidebar_menu .color_6 ul, #sidebar_menu .color_7.active img, #sidebar_menu .color_7 a:hover img, #sidebar_menu .color_7.opened img, #sidebar_menu .color_7 ul, #sidebar_menu .color_8.active img, #sidebar_menu .color_8 a:hover img, #sidebar_menu .color_8.opened img, #sidebar_menu .color_8 ul, #sidebar_menu .color_9.active img, #sidebar_menu .color_9 a:hover img, #sidebar_menu .color_9.opened img, #sidebar_menu .color_9 ul, #sidebar_menu .color_10.active img, #sidebar_menu .color_10 a:hover img, #sidebar_menu .color_10.opened img, #sidebar_menu .color_10 ul, #sidebar_menu .color_11.active img, #sidebar_menu .color_11 a:hover img, #sidebar_menu .color_11.opened img, #sidebar_menu .color_11 ul, #sidebar_menu .color_12.active img, #sidebar_menu .color_12 a:hover img, #sidebar_menu .color_12.opened img, #sidebar_menu .color_12 ul, #sidebar_menu .color_13.active img, #sidebar_menu .color_13 a:hover img, #sidebar_menu .color_13.opened img, #sidebar_menu .color_13 ul, #sidebar_menu .color_14.active img, #sidebar_menu .color_14 a:hover img, #sidebar_menu .color_14.opened img, #sidebar_menu .color_14 ul, #sidebar_menu .color_15.active img, #sidebar_menu .color_15 a:hover img, #sidebar_menu .color_15.opened img, #sidebar_menu .color_15 ul, #sidebar_menu .color_16.active img, #sidebar_menu .color_16 a:hover img, #sidebar_menu .color_16.opened img, #sidebar_menu .color_16 ul, #sidebar_menu .color_17.active img, #sidebar_menu .color_17 a:hover img, #sidebar_menu .color_17.opened img, #sidebar_menu .color_17 ul, #sidebar_menu .color_18.active img, #sidebar_menu .color_18 a:hover img, #sidebar_menu .color_18.opened img, #sidebar_menu .color_18 ul, #sidebar_menu .color_19.active img, #sidebar_menu .color_19 a:hover img, #sidebar_menu .color_19.opened img, #sidebar_menu .color_19 ul, #sidebar_menu .color_20.active img, #sidebar_menu .color_20 a:hover img, #sidebar_menu .color_20.opened img, #sidebar_menu .color_20 ul, #sidebar_menu .color_21.active img, #sidebar_menu .color_21 a:hover img, #sidebar_menu .color_21.opened img, #sidebar_menu .color_21 ul, #sidebar_menu .color_22.active img, #sidebar_menu .color_22 a:hover img, #sidebar_menu .color_22.opened img, #sidebar_menu .color_22 ul, #sidebar_menu .color_23.active img, #sidebar_menu .color_23 a:hover img, #sidebar_menu .color_23.opened img, #sidebar_menu .color_23 ul, #sidebar_menu .color_24.active img, #sidebar_menu .color_24 a:hover img, #sidebar_menu .color_24.opened img, #sidebar_menu .color_24 ul, #sidebar_menu .color_25.active img, #sidebar_menu .color_25 a:hover img, #sidebar_menu .color_25.opened img, #sidebar_menu .color_25 ul, #sidebar_menu .color_26.active img, #sidebar_menu .color_26 a:hover img, #sidebar_menu .color_26.opened img, #sidebar_menu .color_26 ul, #sidebar_menu .color_27.active img, #sidebar_menu .color_27 a:hover img, #sidebar_menu .color_27.opened img, #sidebar_menu .color_27 ul, #sidebar_menu .color_light.active img, #sidebar_menu .color_light a:hover img, #sidebar_menu .color_light.opened img, #sidebar_menu .color_light ul, .progress, .btn:hover, .btn.btn-primary, .btn.btn-secondary:hover, .btn-group.open .btn, .options_arrow a:hover, .form-horizontal .form-actions, .input-append .add-on, .input-prepend .add-on, .container .ui-widget-header {
-  background-image: url("../img/shadows/b30.png");
+  background-image: asset-url("shadows/b30.png");
 }
 
 .b15, .pagination > ul a, .pagination > .dataTables_paginate a, .nav-tabs > li > a:hover, .nav-tabs .open .dropdown-toggle, .color_light .title, .btn, .container .elfinder .elfinder-navbar {
-  background-image: url("../img/shadows/b15.png");
+  background-image: asset-url("shadows/b15.png");
 }
 
 .b10, #main ul.dropdown-menu li > a, .accordion .accordion-group .accordion-heading a, #sidebar_menu .color_0.active ul li.active, #sidebar_menu .color_1.active ul li.active, #sidebar_menu .color_2.active ul li.active, #sidebar_menu .color_3.active ul li.active, #sidebar_menu .color_4.active ul li.active, #sidebar_menu .color_5.active ul li.active, #sidebar_menu .color_6.active ul li.active, #sidebar_menu .color_7.active ul li.active, #sidebar_menu .color_8.active ul li.active, #sidebar_menu .color_9.active ul li.active, #sidebar_menu .color_10.active ul li.active, #sidebar_menu .color_11.active ul li.active, #sidebar_menu .color_12.active ul li.active, #sidebar_menu .color_13.active ul li.active, #sidebar_menu .color_14.active ul li.active, #sidebar_menu .color_15.active ul li.active, #sidebar_menu .color_16.active ul li.active, #sidebar_menu .color_17.active ul li.active, #sidebar_menu .color_18.active ul li.active, #sidebar_menu .color_19.active ul li.active, #sidebar_menu .color_20.active ul li.active, #sidebar_menu .color_21.active ul li.active, #sidebar_menu .color_22.active ul li.active, #sidebar_menu .color_23.active ul li.active, #sidebar_menu .color_24.active ul li.active, #sidebar_menu .color_25.active ul li.active, #sidebar_menu .color_26.active ul li.active, #sidebar_menu .color_27.active ul li.active, #sidebar_menu .color_light.active ul li.active, .change_color_outside:hover, .btn.btn-secondary, .btn.btn-inverse:hover, .well, .options_arrow a.dropdown-toggle, ul.messages_layout li .message_wrap, .bar_stats .content .result, #todo-list li .todo-text:hover, #todo-list li .done .todo-text {
-  background-image: url("../img/shadows/b10.png");
+  background-image: asset-url("shadows/b10.png");
 }
 
 .w20, #sidebar .thumb .end,
 #sidebar .thumb, .background_changer ul li a:hover, .container .elfinder .elfinder-cwd-wrapper {
-  background-image: url("../img/shadows/w20.png");
+  background-image: asset-url("shadows/w20.png");
 }
 
 .w50, .background_changer ul li a.active {
-  background-image: url("../img/shadows/w50.png");
+  background-image: asset-url("shadows/w50.png");
 }
 
 .color_0 {
@@ -10254,7 +10246,7 @@ i.xxbig {
   cursor: pointer;
 }
 .change_color_outside i.paint_bucket {
-  background: url("../img/paint_bucket.png");
+  background: asset-url("paint_bucket.png");
   width: 16px;
   height: 14px;
   display: inline-block;
@@ -10584,7 +10576,7 @@ i.xxbig {
 }
 .box .content {
   padding: 10px 15px;
-  background: url("../img/shadows/b10.png");
+  background: asset-url("shadows/b10.png");
 }
 .box > .description {
   padding: 3px 15px 3px 15px;
@@ -10732,7 +10724,7 @@ i.xxbig {
 }
 #footer .company_logo a {
   float: right;
-  background: url("../img/company_pxg.png") 0 0 no-repeat;
+  background: asset-url("company_pxg.png") 0 0 no-repeat;
   width: 74px;
   height: 18px;
 }
@@ -11164,7 +11156,7 @@ html .colorpicker.dropdown-menu {
 .colorpicker-saturation {
   width: 170px;
   height: 170px;
-  background: url(../img/saturation2.png) bottom left no-repeat;
+  background: asset-url("saturation2.png") bottom left no-repeat;
   cursor: crosshair;
   float: left;
 }
@@ -11214,11 +11206,11 @@ html .colorpicker.dropdown-menu {
 }
 
 .colorpicker-hue {
-  background-image: url(../img/hue2.png);
+  background-image: asset-url("hue2.png");
 }
 
 .colorpicker-alpha {
-  background-image: url(../img/alpha2.png);
+  background-image: asset-url("alpha2.png");
   display: none;
 }
 
@@ -11284,7 +11276,7 @@ html .colorpicker.dropdown-menu {
   float: left;
   width: 100%;
   clear: both;
-  background-image: url(../img/alpha.png);
+  background-image: asset-url("alpha.png");
   background-position: 0 100%;
 }
 
@@ -11723,7 +11715,7 @@ body {
   font-size: 1.5rem;
   font-family: "Open Sans", Arial, sans-serif;
   color: #7e838b;
-  background: url(../img/shadows/b85.png) 0 0 repeat-y;
+  background: asset-url("shadows/b85.png") 0 0 repeat-y;
   width: 100%;
   float: left;
   height: 100%;
@@ -11761,7 +11753,7 @@ input, button, select, textarea {
   float: left;
 }
 .logo a span.icon {
-  background: url(../img/logo.png) 0 0 no-repeat;
+  background: asset-url("logo.png") 0 0 no-repeat;
   height: 39px;
   width: 39px;
   margin-left: 10px;
@@ -11898,7 +11890,7 @@ input, button, select, textarea {
   line-height: 16px;
 }
 #main .top_right ul > li:hover {
-  background: url(../img/shadows/b10.png);
+  background: asset-url("shadows/b10.png");
 }
 #main .top_right ul > li > ul {
   opacity: 0;
@@ -12401,7 +12393,7 @@ ul.wysihtml5-commands-disabled .dropdown-menu {
   text-decoration: none;
 }
 #login form a {
-  background: url(../img/login_arrow.png) 5px 4px no-repeat;
+  background: asset-url("login_arrow.png") 5px 4px no-repeat;
   text-indent: -9999px;
   padding: 9px;
   width: 29px;
@@ -12655,7 +12647,7 @@ a#clear-completed:hover {
   line-height: 17px;
   height: 2.2em;
   margin: 2px;
-  background: url("images/search.png") no-repeat 9px 7px white;
+  background: asset-url("images/search.png") no-repeat 9px 7px white;
 }
 .container .elfinder-button-search .ui-icon {
   background: none;
