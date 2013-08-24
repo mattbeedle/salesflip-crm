@@ -35,6 +35,7 @@ gem 'dotenv-rails'
 gem 'ember-rails'
 gem 'ember-source'
 gem 'emblem-rails'
+gem 'foreman'
 gem 'grape'
 
 group :development, :test do
