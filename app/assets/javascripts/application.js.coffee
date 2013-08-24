@@ -13,4 +13,11 @@
 #= require jquery
 #= require jquery_ujs
 #= require bootstrap
+#= require handlebars
+#= require ember
+#= require ember-data
+#= require_self
+#= require salesflip
+window.Salesflip = Ember.Application.create()
+
 #= require_tree .

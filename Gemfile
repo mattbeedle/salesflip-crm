@@ -31,9 +31,10 @@ end
 
 gem 'bootstrap-sass'
 gem 'datamappify'
+gem 'devise'
 gem 'dotenv-rails'
 gem 'ember-rails'
-gem 'ember-source'
+gem 'ember-source', '~> 1.0.0.rc6.4'
 gem 'emblem-rails'
 gem 'foreman'
 gem 'grape'

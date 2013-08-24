@@ -40,6 +40,7 @@ GEM
     barber-emblem (0.1.1)
       barber (>= 0.4.1)
       emblem-source
+    bcrypt-ruby (3.1.1)
     bootstrap-sass (2.3.2.1)
       sass (~> 3.2)
     builder (3.1.4)
@@ -58,6 +59,11 @@ GEM
       hooks (~> 0.3.0)
       virtus (>= 1.0.0.beta0, <= 2.0)
     descendants_tracker (0.0.1)
+    devise (3.0.1)
+      bcrypt-ruby (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      warden (~> 1.2.3)
     diff-lcs (1.2.4)
     dotenv (0.8.0)
     dotenv-rails (0.8.0)
@@ -79,6 +85,9 @@ GEM
     emblem-source (0.3.2)
     erubis (2.7.0)
     execjs (2.0.0)
+    foreman (0.63.0)
+      dotenv (>= 0.7)
+      thor (>= 0.13.6)
     grape (0.5.0)
       activesupport
       builder
@@ -110,6 +119,7 @@ GEM
     minitest (4.7.5)
     multi_json (1.7.9)
     multi_xml (0.5.5)
+    orm_adapter (0.4.0)
     pg (0.16.0)
     polyglot (0.3.3)
     rack (1.5.2)
@@ -183,6 +193,8 @@ GEM
       adamantium (~> 0.0.7)
       coercible (~> 0.2)
       descendants_tracker (~> 0.0.1)
+    warden (1.2.3)
+      rack (>= 1.0)
 
 PLATFORMS
   ruby
@@ -191,10 +203,12 @@ DEPENDENCIES
   bootstrap-sass
   coffee-rails (~> 4.0.0)
   datamappify
+  devise
   dotenv-rails
   ember-rails
-  ember-source
+  ember-source (~> 1.0.0.rc6.4)
   emblem-rails
+  foreman
   grape
   jbuilder (~> 1.2)
   jquery-rails
