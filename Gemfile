@@ -38,6 +38,7 @@ gem 'ember-source', '~> 1.0.0.rc6.4'
 gem 'emblem-rails'
 gem 'foreman'
 gem 'grape'
+gem 'jquery-ui-rails'
 
 group :development, :test do
   gem 'rspec-rails'

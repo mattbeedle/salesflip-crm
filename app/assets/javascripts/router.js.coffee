@@ -1,3 +1,3 @@
-Salesflip.Router.map (match)->
+App.Router.map (match)->
   # match('/').to('index')
 

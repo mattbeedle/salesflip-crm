@@ -12,12 +12,29 @@
 #
 #= require jquery
 #= require jquery_ujs
+#= require jquery.ui.all
+#= require plugins/enquire.min
+#= require plugins/jquery.sparkline.min
+#= require plugins/excanvas.compiled
 #= require bootstrap
+#= require fileinput.jquery
+#= require jquery.touchdown
+#= require plugins/jquery.uniform.min
+#= require plugins/jquery.tinyscrollbar.min
+#= require jnavigate.jquery.min
+#= require jquery.touchSwipe.min
+#= require plugins/jquery.peity.min
+#= require plugins/flot/jquery.flot
+#= require plugins/flot/jquery.flot.resize
+#= require plugins/datatables/js/jquery.dataTables
+#= require scripts
 #= require handlebars
 #= require ember
 #= require ember-data
 #= require_self
-#= require salesflip
-window.Salesflip = Ember.Application.create()
+#= require app
+window.App = Ember.Application.create LOG_TRANSITIONS: true
+window.App.deferReadiness()
 
-#= require_tree .
+$ ->
+  window.App.advanceReadiness()
