@@ -34,6 +34,7 @@
 #= require ember-data
 #= require_self
 #= require app
+#= require scripts
 
 window.App = Ember.Application.create LOG_TRANSITIONS: true
 window.App.deferReadiness()
