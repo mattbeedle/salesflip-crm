@@ -36,9 +36,12 @@ gem 'dotenv-rails'
 gem 'ember-rails'
 gem 'ember-source', '~> 1.0.0.rc6.4'
 gem 'emblem-rails'
+gem 'flot-rails'
 gem 'foreman'
 gem 'grape'
+gem 'jquery-datatables-rails', git: 'git://github.com/rweng/jquery-datatables-rails.git'
 gem 'jquery-ui-rails'
+gem 'modernizr-rails'
 
 group :development, :test do
   gem 'rspec-rails'

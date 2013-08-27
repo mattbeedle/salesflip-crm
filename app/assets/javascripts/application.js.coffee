@@ -13,21 +13,21 @@
 #= require jquery
 #= require jquery_ujs
 #= require jquery.ui.all
-#= require plugins/enquire.min
-#= require plugins/jquery.sparkline.min
+#= require plugins/enquire
+#= require plugins/jquery.sparkline
 #= require plugins/excanvas.compiled
 #= require bootstrap
 #= require fileinput.jquery
 #= require jquery.touchdown
-#= require plugins/jquery.uniform.min
-#= require plugins/jquery.tinyscrollbar.min
-#= require jnavigate.jquery.min
-#= require jquery.touchSwipe.min
-#= require plugins/jquery.peity.min
-#= require plugins/flot/jquery.flot
-#= require plugins/flot/jquery.flot.resize
-#= require plugins/datatables/js/jquery.dataTables
-#= require scripts
+#= require plugins/jquery.uniform
+#= require plugins/jquery.tinyscrollbar
+#= require jnavigate.jquery
+#= require jquery.touchSwipe
+#= require plugins/jquery.peity
+#= require jquery.flot
+#= require jquery.flot.resize
+#= require dataTables/jquery.dataTables
+#= require dataTables/jquery.dataTables.bootstrap
 #= require handlebars
 #= require ember
 #= require ember-data
@@ -36,5 +36,10 @@
 window.App = Ember.Application.create LOG_TRANSITIONS: true
 window.App.deferReadiness()
 
+$(window).load ->
+  $('#loading').fadeOut()
+
 $ ->
   window.App.advanceReadiness()
+  $('body').css('display', 'none')
+  $('body').fadeIn(500)
