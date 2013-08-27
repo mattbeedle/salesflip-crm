@@ -1,6 +1,4 @@
 (function (d) {
-  console.log(d);
-  console.log(jQuery);
     if (Modernizr.localstorage) {
         if (localStorage.getItem("start.menu_state") === null) {
             localStorage["start.menu_state"] = "sidebar_default";
@@ -314,6 +312,6 @@
                     })
                 }
             }
-        }).fire()
+        })
     }
 })(jQuery);
