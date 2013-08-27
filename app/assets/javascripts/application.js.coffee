@@ -37,6 +37,9 @@
 #= require jquery.validate.additional-methods
 #= require fullcalendar
 #= require gcal
+#= require gritter
+#= require raphael
+#= require justgage
 
 #= require handlebars
 #= require ember

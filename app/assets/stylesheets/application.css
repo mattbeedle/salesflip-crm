@@ -16,6 +16,7 @@
  *= require bootstrap_and_overrides
  *= require fullcalendar
  *= require fullcalendar.print
+ *= require gritter
  *= require base
  *= require_tree .
  */
