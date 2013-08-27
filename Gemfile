@@ -30,6 +30,7 @@ group :doc do
 end
 
 gem 'bootstrap-sass'
+gem 'bootstrap-wysihtml5-rails'
 gem 'datamappify'
 gem 'devise'
 gem 'dotenv-rails'

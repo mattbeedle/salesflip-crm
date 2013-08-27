@@ -26,6 +26,7 @@
 #= require plugins/jquery.peity
 #= require jquery.flot
 #= require jquery.flot.resize
+#= require bootstrap-wysihtml5
 #= require dataTables/jquery.dataTables
 #= require dataTables/jquery.dataTables.bootstrap
 #= require handlebars
@@ -33,6 +34,7 @@
 #= require ember-data
 #= require_self
 #= require app
+
 window.App = Ember.Application.create LOG_TRANSITIONS: true
 window.App.deferReadiness()
 
