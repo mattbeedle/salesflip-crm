@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/milgner/compass-rails.git
+  revision: c86e7fd9c2605c80816a2f64a3fb8b7c3a09e494
+  branch: rails4
+  specs:
+    compass-rails (1.0.3)
+      compass (>= 0.12.2, < 0.14)
+
+GIT
   remote: git://github.com/rweng/jquery-datatables-rails.git
   revision: 494f752b8eb8350f33841c822a67d014c869219f
   specs:
@@ -53,6 +61,12 @@ GEM
     bootstrap-wysihtml5-rails (0.3.1.22)
       railties (>= 3.0)
     builder (3.1.4)
+    chosen-rails (1.0.0)
+      coffee-rails (>= 3.2)
+      compass-rails (>= 1.0)
+      railties (>= 3.0)
+      sass-rails (>= 3.2)
+    chunky_png (1.2.8)
     coercible (0.2.0)
       backports (~> 3.0, >= 3.1.0)
       descendants_tracker (~> 0.0.1)
@@ -63,6 +77,10 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
+    compass (0.12.2)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
     datamappify (0.60.0)
       activemodel (>= 4.0.0.rc1, < 5)
       hooks (~> 0.3.0)
@@ -99,6 +117,8 @@ GEM
     foreman (0.63.0)
       dotenv (>= 0.7)
       thor (>= 0.13.6)
+    fssm (0.2.10)
+    fullcalendar-rails (1.6.1.0)
     grape (0.5.0)
       activesupport
       builder
@@ -111,6 +131,8 @@ GEM
       virtus
     handlebars-source (1.0.12)
     hashie (2.0.5)
+    highcharts-rails (3.0.3)
+      railties (>= 3.1)
     hike (1.2.3)
     hooks (0.3.1)
     i18n (0.6.5)
@@ -118,12 +140,15 @@ GEM
     jbuilder (1.5.1)
       activesupport (>= 3.0.0)
       multi_json (>= 1.2.0)
+    jquery-migrate-rails (1.2.1)
     jquery-rails (3.0.4)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     jquery-ui-rails (4.0.4)
       jquery-rails
       railties (>= 3.1.0)
+    jquery-validation-rails (1.11.1)
+      thor (~> 0.14)
     json (1.8.0)
     libv8 (3.16.14.3)
     mail (2.5.4)
@@ -136,6 +161,7 @@ GEM
     multi_xml (0.5.5)
     orm_adapter (0.4.0)
     pg (0.16.0)
+    pie-rails (1.1.0)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-accept (0.4.5)
@@ -217,7 +243,9 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass
   bootstrap-wysihtml5-rails
+  chosen-rails
   coffee-rails (~> 4.0.0)
+  compass-rails!
   datamappify
   devise
   dotenv-rails
@@ -226,13 +254,18 @@ DEPENDENCIES
   emblem-rails
   flot-rails
   foreman
+  fullcalendar-rails
   grape
+  highcharts-rails
   jbuilder (~> 1.2)
   jquery-datatables-rails!
+  jquery-migrate-rails
   jquery-rails
   jquery-ui-rails
+  jquery-validation-rails
   modernizr-rails
   pg
+  pie-rails
   rails (~> 4.0.0)
   rspec-rails
   sass-rails (~> 4.0.0)

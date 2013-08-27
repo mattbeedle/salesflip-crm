@@ -11,6 +11,7 @@
 # about supported directives.
 #
 #= require jquery
+#= require jquery-migrate-min
 #= require jquery_ujs
 #= require jquery.ui.all
 #= require plugins/enquire
@@ -29,11 +30,20 @@
 #= require bootstrap-wysihtml5
 #= require dataTables/jquery.dataTables
 #= require dataTables/jquery.dataTables.bootstrap
+#= require chosen-jquery
+#= require highcharts
+#= require highcharts/highcharts-more
+#= require jquery.validate
+#= require jquery.validate.additional-methods
+#= require fullcalendar
+#= require gcal
+
 #= require handlebars
 #= require ember
 #= require ember-data
 #= require_self
 #= require app
+
 #= require scripts
 
 window.App = Ember.Application.create LOG_TRANSITIONS: true

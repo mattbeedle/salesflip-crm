@@ -1,4 +1,6 @@
 (function (d) {
+  console.log(d);
+  console.log(jQuery);
     if (Modernizr.localstorage) {
         if (localStorage.getItem("start.menu_state") === null) {
             localStorage["start.menu_state"] = "sidebar_default";
@@ -6,21 +8,8 @@
         }
     } else {}
     d(function () {
-
         d("input:checkbox, input:radio, input:file").uniform();
         d("[rel=tooltip]").tooltip();
-        d(".bar_1").sparkline([3, 4, 8, 5, 3, 6, 3, 2, 3, 5], {
-            type: "bar",
-            barColor: "#fff"
-        });
-        d(".bar_2").sparkline([5, 3, 9, 6, 5, 9, 7, 3, 5, 2], {
-            type: "bar",
-            barColor: "#fff"
-        });
-        d(".bar_3").sparkline([6, 9, 3, 5, 3, 5, 2, 8, 9, 6, 3], {
-            type: "bar",
-            barColor: "#fff"
-        });
     });
 
 
@@ -35,7 +24,6 @@
      var show_the_menu = function () {
         d('html').addClass("active");
     };
-
 
     d(".box.paint_hover").append('<a class="change_color_outside"><i class="paint_bucket"></i></a>');
     d(".box.paint").append('<a class="btn change_color_outside"><i class="paint_bucket"></i></a>');
