@@ -1,3 +1,6 @@
-App.Router.map (match)->
-  # match('/').to('index')
+App.Router.reopen
+  location: 'history'
+  rootURL: '/'
 
+App.Router.map (match)->
+  @resource 'leads'
