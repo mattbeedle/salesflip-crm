@@ -7,7 +7,6 @@ App.Lead = DS.Model.extend
   salutation:     DS.attr('string')
   company:        DS.attr('string')
   source:         DS.attr('string')
-  state:          DS.attr('state')
   referredBy:     DS.attr('string')
   email:          DS.attr('string')
   blog:           DS.attr('string')
@@ -20,3 +19,14 @@ App.Lead = DS.Model.extend
   backgroundInfo: DS.attr('string')
   createdAt:      DS.attr('string')
   updatedAt:      DS.attr('string')
+  street:         DS.attr('string')
+  city:           DS.attr('string')
+  region:         DS.attr('string')
+  postal_code:    DS.attr('string')
+  country:        DS.attr('string')
+  phone:          DS.attr('string')
+  mobile:         DS.attr('string')
+
+  displayName: (->
+    [@get('firstName'), @get('lastName')].compact().join(' ')
+  ).property('firstName', 'lastName')

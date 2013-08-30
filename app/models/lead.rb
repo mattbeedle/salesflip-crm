@@ -23,4 +23,6 @@ class Lead
   references :user
   references :assigned_to
   references :campaign
+
+  validates :last_name, presence: true
 end

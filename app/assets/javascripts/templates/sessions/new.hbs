@@ -28,6 +28,19 @@
               </span>
             </div>
           </div>
+
+          <div class="control-group row-fluid form-row">
+            <label class="control-label span3">Remember Me</label>
+            <div class="controls span9">
+              <label class="checkbox inline">
+                <div class="checker">
+                  <span class="checked">
+                    {{view Ember.Checkbox contentBinding="remember" value="true" checked="true"}}
+                  </span>
+                </div>
+              </label>
+          </div>
+
           <div class="control-group row-fluid">
             <div class="span3 visible-desktop"></div>
             <div class="controls span5">

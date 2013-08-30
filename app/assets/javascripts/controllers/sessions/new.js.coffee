@@ -8,4 +8,4 @@ App.SessionsNewController = Ember.Controller.extend
       data:
         email: @get('email')
         password: @get('password')
-        remember: @get('remember')
+        remember: true

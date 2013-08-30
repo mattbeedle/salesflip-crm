@@ -11,17 +11,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130829171002) do
+ActiveRecord::Schema.define(version: 20130830132049) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "uuid-ossp"
 
+  create_table "campaigns", force: true do |t|
+    t.uuid     "user_id"
+    t.uuid     "assigned_to"
+    t.string   "name"
+    t.string   "access"
+    t.string   "state"
+    t.decimal  "budget"
+    t.integer  "target_leads"
+    t.float    "target_conversion"
+    t.decimal  "target_revenue"
+    t.date     "starts_on"
+    t.date     "ends_on"
+    t.datetime "deleted_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "leads", id: false, force: true do |t|
     t.uuid     "id",                              null: false
-    t.uuid     "user",                            null: false
-    t.uuid     "campaign"
-    t.uuid     "assigned_to"
+    t.uuid     "user_id",                         null: false
+    t.uuid     "campaign_id"
+    t.uuid     "assigned_to_id"
     t.string   "first_name"
     t.string   "last_name"
     t.string   "title"

@@ -1,0 +1,24 @@
+<div class="row-fluid">
+  <div class="span12">
+    <a href="" {{action newLead on="click"}} class="btn btn-primary">New Lead</a>
+    <div class="box paint color_18">
+      <div class="title">
+        <h4>
+          <i class="icon-bar-chart"></i>
+          <span>Leads</span>
+        </h4>
+      </div>
+      <div class="content top">
+        <table class="responsive table table-striped table-bordered">
+          <tbody>
+            {{#each controller}}
+              <tr>
+                <td>{{#linkTo 'lead.show' this}}{{displayName}}{{/linkTo}}</td>
+              </tr>
+              {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

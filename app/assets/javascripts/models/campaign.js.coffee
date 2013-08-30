@@ -1,0 +1,13 @@
+App.Campaign = DS.Model.extend
+  user:             DS.belongsTo('App.User')
+  assignedTo:       DS.belongsTo('App.User')
+  name:             DS.attr('string')
+  access:           DS.attr('string')
+  state:            DS.attr('string')
+  budget:           DS.attr('number')
+  targetLeads:      DS.attr('number')
+  targetConversion: DS.attr('number')
+  targetRevenue:    DS.attr('number')
+  startsOn:         DS.attr('string')
+  endsOn:           DS.attr('string')
+  deletedAt:        DS.attr('string')

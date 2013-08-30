@@ -54,11 +54,19 @@
 
 #= require scripts
 
+Array::compact = ->
+  (elem for elem in this when elem != null and elem != '')
+
 window.App = Ember.Application.create LOG_TRANSITIONS: true
 window.App.deferReadiness()
 
 $(window).load ->
   $('#loading').fadeOut()
+
+App.salutations = [
+  Ember.Object.create({ key: 'mr', value: 'Mr' }),
+  Ember.Object.create({ key: 'ms', value: 'Ms' })
+]
 
 $ ->
   window.App.advanceReadiness()

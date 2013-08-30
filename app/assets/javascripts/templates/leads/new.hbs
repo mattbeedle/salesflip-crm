@@ -1,0 +1,15 @@
+<form {{action submit on="submit"}} class="form-horizontal">
+  <div class="content">
+    <div class="modal-header">
+      <button class="close" {{action cancel on="click"}}>&times;</button>
+      <h3>New Lead</h3>
+    </div>
+    <div class="modal-body">
+      {{partial "leads/form"}}
+    </div>
+    <div class="modal-footer">
+      <button type="submit" {{action submit on="click"}}>Create Lead</button>
+      <a class="btn btn-inverse" {{action cancel on="click"}}>Cancel</a>
+    </div>
+  </div>
+</form>
