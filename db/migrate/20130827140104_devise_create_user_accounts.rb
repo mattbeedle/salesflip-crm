@@ -1,6 +1,8 @@
 class DeviseCreateUserAccounts < ActiveRecord::Migration
   def change
-    create_table(:user_accounts) do |t|
+    enable_extension "uuid-ossp"
+
+    create_table(:user_accounts, id: :uuid) do |t|
       ## Database authenticatable
       t.string :email,              :null => false, :default => ""
       t.string :encrypted_password, :null => false, :default => ""
@@ -31,7 +33,7 @@ class DeviseCreateUserAccounts < ActiveRecord::Migration
       t.datetime :locked_at
 
       ## Token authenticatable
-      # t.string :authentication_token
+      t.string :authentication_token
 
 
       t.timestamps
@@ -41,6 +43,6 @@ class DeviseCreateUserAccounts < ActiveRecord::Migration
     add_index :user_accounts, :reset_password_token, :unique => true
     add_index :user_accounts, :confirmation_token,   :unique => true
     add_index :user_accounts, :unlock_token,         :unique => true
-    # add_index :user_accounts, :authentication_token, :unique => true
+    add_index :user_accounts, :authentication_token, :unique => true
   end
 end

@@ -11,15 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130827173205) do
+ActiveRecord::Schema.define(version: 20130829171002) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+  enable_extension "uuid-ossp"
 
-  create_table "leads", force: true do |t|
-    t.integer  "user_id",                         null: false
-    t.integer  "campaign_id"
-    t.integer  "assigned_to_id"
+  create_table "leads", id: false, force: true do |t|
+    t.uuid     "id",                              null: false
+    t.uuid     "user",                            null: false
+    t.uuid     "campaign"
+    t.uuid     "assigned_to"
     t.string   "first_name"
     t.string   "last_name"
     t.string   "title"
@@ -42,11 +44,8 @@ ActiveRecord::Schema.define(version: 20130827173205) do
     t.datetime "updated_at"
   end
 
-  add_index "leads", ["assigned_to_id"], name: "index_leads_on_assigned_to_id", using: :btree
-  add_index "leads", ["campaign_id"], name: "index_leads_on_campaign_id", using: :btree
-  add_index "leads", ["user_id"], name: "index_leads_on_user_id", using: :btree
-
-  create_table "user_accounts", force: true do |t|
+  create_table "user_accounts", id: false, force: true do |t|
+    t.uuid     "id",                                  null: false
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
@@ -64,13 +63,22 @@ ActiveRecord::Schema.define(version: 20130827173205) do
     t.integer  "failed_attempts",        default: 0
     t.string   "unlock_token"
     t.datetime "locked_at"
+    t.string   "authentication_token"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.uuid     "user"
   end
 
+  add_index "user_accounts", ["authentication_token"], name: "index_user_accounts_on_authentication_token", unique: true, using: :btree
   add_index "user_accounts", ["confirmation_token"], name: "index_user_accounts_on_confirmation_token", unique: true, using: :btree
   add_index "user_accounts", ["email"], name: "index_user_accounts_on_email", unique: true, using: :btree
   add_index "user_accounts", ["reset_password_token"], name: "index_user_accounts_on_reset_password_token", unique: true, using: :btree
   add_index "user_accounts", ["unlock_token"], name: "index_user_accounts_on_unlock_token", unique: true, using: :btree
+
+  create_table "users", id: false, force: true do |t|
+    t.uuid   "id",         null: false
+    t.string "first_name"
+    t.string "last_name"
+  end
 
 end

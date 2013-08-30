@@ -1,0 +1,40 @@
+<div class="row-fluid">
+  <div class="span12">
+    <div class="box paint color_2">
+      <div class="title">
+        <h4>
+          <i class="icon-calendar"></i>
+          <span>Register</span>
+        </h1>
+      </div>
+      <div class="content">
+        <form class="form-horizontal bs-docs-example">
+          <div class="control-group row-fluid">
+            <label for="" class="control-label span3">Email</label>
+            <div class="controls span9 input-append">
+              {{view Ember.TextField valueBinding="email" classNames="row-fluid"}}
+              <span class="add-on">
+                <i class="icon-user"></i>
+              </span>
+            </div>
+          </div>
+          <div class="control-group row-fluid">
+            <label for="" class="control-label span3">Password</label>
+            <div class="controls span9 input-append">
+              {{view Ember.TextField valueBinding="password" classNames="row-fluid"}}
+              <span class="add-on">
+                <i class="icon-lock"></i>
+              </span>
+            </div>
+          </div>
+          <div class="control-group row-fluid">
+            <div class="span3 visible-desktop"></div>
+            <div class="controls span5">
+              <button type="submit" class="btn btn-primary">Register</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

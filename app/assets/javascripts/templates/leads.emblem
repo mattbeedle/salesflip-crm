@@ -1,1 +1,4 @@
-h1 Leads
+ul
+  each controller
+    li
+      lead.displayName

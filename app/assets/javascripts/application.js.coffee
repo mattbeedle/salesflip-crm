@@ -43,8 +43,11 @@
 
 #= require handlebars
 #= require ember
+#= require ember-auth
+#= require ember-bootstrap/all
 #= require ember-data
 #= require_self
+#= require auth
 #= require app
 
 #= require scripts

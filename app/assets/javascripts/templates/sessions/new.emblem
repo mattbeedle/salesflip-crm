@@ -1,0 +1,11 @@
+form class="form-horizontal"
+  .control-group.string.required
+    label Email
+    .controls
+      view Ember.TextField valueBinding="email"
+  .control-group.string.required
+    label Password
+    .controls
+      view Ember.TextField valueBinding="password"
+  .form-actions
+    input type="submit" value="Login" class="btn"

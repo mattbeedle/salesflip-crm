@@ -1,9 +1,9 @@
 class CreateLeads < ActiveRecord::Migration
   def change
-    create_table :leads do |t|
-      t.belongs_to          :user, index: true, null: false
-      t.belongs_to          :campaign, index: true
-      t.belongs_to          :assigned_to, index: true
+    create_table :leads, id: :uuid do |t|
+      t.uuid                :user, index: true, null: false
+      t.uuid                :campaign, index: true
+      t.uuid                :assigned_to, index: true
       t.string              :first_name
       t.string              :last_name
       t.string              :title
