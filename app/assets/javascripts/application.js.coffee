@@ -46,6 +46,8 @@
 #= require ember-auth
 #= require ember-bootstrap/all
 #= require ember-data
+#= require ember-easyForm
+#= require ember-validations
 #= require_self
 #= require auth
 #= require app

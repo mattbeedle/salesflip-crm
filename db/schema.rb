@@ -66,7 +66,7 @@ ActiveRecord::Schema.define(version: 20130829171002) do
     t.string   "authentication_token"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.uuid     "user"
+    t.uuid     "user_id"
   end
 
   add_index "user_accounts", ["authentication_token"], name: "index_user_accounts_on_authentication_token", unique: true, using: :btree

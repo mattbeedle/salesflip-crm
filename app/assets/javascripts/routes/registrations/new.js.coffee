@@ -1,6 +1,6 @@
 App.RegistrationsNewRoute = Ember.Route.extend
   model: ->
-    App.User.createRecord()
+    App.Registration.createRecord()
 
   setupController: (controller, model) ->
     controller.set('content', model)

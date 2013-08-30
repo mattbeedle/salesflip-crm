@@ -36,5 +36,6 @@ class Api < Grape::API
   end
 
   mount LeadsApi
+  mount RegistrationsApi
   mount SessionsApi
 end
