@@ -6,6 +6,6 @@ class UserRepository
   default_provider :ActiveRecord
 
   group provider: :ActiveRecord do
-    map_attribute :account_email, 'UserAccount#email'
+    map_attribute :account_email, to: 'UserAccount#email'
   end
 end
